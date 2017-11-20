@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SSoTme.Default.Lib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,12 @@ namespace WindowsFormsApp1
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            var photo = new Photo();
+            photo.Name = "test";
         }
     }
 }

@@ -1,0 +1,170 @@
+
+{
+  "Ontology": {
+    "Name": "Project Name",
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "dbo",
+        "ObjectDefs": {
+          "ObjectDef": [
+            {
+              "Name": "Photo",
+              "OriginalName": "Photo",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "PhotoId",
+                    "OriginalName": "PhotoId",
+                    "IsPrimaryKey": "1",
+                    "IsNullable": "0",
+                    "DataType": "GUID",
+                    "DataLength": ""
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "50"
+                  },
+                  {
+                    "Name": "Description",
+                    "OriginalName": "Description",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "500"
+                  },
+                  {
+                    "Name": "UserId",
+                    "DataType": "GUID",
+                    "DataLength": "",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "ReferencedObjectDef": "User",
+                        "ReferencedPropertyDef": "UserId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "User",
+              "OriginalName": "User",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "UserId",
+                    "OriginalName": "UserId",
+                    "IsPrimaryKey": "1",
+                    "IsNullable": "0",
+                    "DataType": "GUID",
+                    "DataLength": ""
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "50"
+                  },
+                  {
+                    "Name": "Description",
+                    "OriginalName": "Description",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "500"
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "Rating",
+              "OriginalName": "Rating",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "RatingId",
+                    "OriginalName": "RatingId",
+                    "IsPrimaryKey": "1",
+                    "IsNullable": "0",
+                    "DataType": "GUID",
+                    "DataLength": ""
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "50"
+                  },
+                  {
+                    "Name": "Description",
+                    "OriginalName": "Description",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "500"
+                  },
+                  {
+                    "Name": "PhotoId",
+                    "DataType": "GUID",
+                    "DataLength": "",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "ReferencedObjectDef": "Photo",
+                        "ReferencedPropertyDef": "PhotoId"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "App",
+              "OriginalName": "App",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "AppId",
+                    "OriginalName": "AppId",
+                    "IsPrimaryKey": "1",
+                    "IsNullable": "0",
+                    "DataType": "GUID",
+                    "DataLength": ""
+                  },
+                  {
+                    "Name": "Name",
+                    "OriginalName": "Name",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "50"
+                  },
+                  {
+                    "Name": "Description",
+                    "OriginalName": "Description",
+                    "IsPrimaryKey": "0",
+                    "IsNullable": "0",
+                    "DataType": "TEXT",
+                    "DataLength": "500"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+                    
